@@ -167,10 +167,6 @@ button {
   justify-content: space-between;
 }
 
-.brand-name {
-  padding-left: 0.5rem;
-}
-
 #flex-3 {
   display: flex;
   color: white;
@@ -206,10 +202,11 @@ button {
   justify-content: center;
   width: 100%;
   max-width: 1440px;
+  overflow: hidden;
 }
 
 #flex-8 {
-  max-width: 480px;
+  max-width: 460px;
 }
 
 #flex-9 {
@@ -218,7 +215,6 @@ button {
   align-items: center;
   justify-content: space-between;
 
-  width: fit-content;
   overflow: hidden;
 }
 
@@ -236,6 +232,16 @@ button {
   .banner-gallery .img-medium {
     display: none;
   }
+
+  .gallery-container {
+    justify-content: space-around;
+  }
+  #flex-9 {
+    flex-basis: 40%;
+  }
+  #flex-10 {
+    flex-basis: 60%;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -252,7 +258,7 @@ button {
   }
 
   #flex-8 {
-    max-width: 80%;
+    max-width: 85%;
   }
 }
 
@@ -281,5 +287,8 @@ button {
 
   .gallery-container {
     flex-direction: column;
+  }
+  #flex-8 {
+    max-width: 85%;
   }
 }

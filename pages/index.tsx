@@ -2,6 +2,7 @@ import type { NextPage } from "next"
 import Head from "next/head"
 import Image from "next/image"
 import IconItem from "../components/IconItem"
+import MenuItem from "../components/MenuItem"
 import ProductCard from "../components/ProductCard"
 import RectBanner from "../components/RectBanner"
 import SearchInput from "../components/SearchInput"
@@ -20,7 +21,11 @@ const Home: NextPage = () => {
         <div className="container" id="flex-2">
           <div id="flex-3">
             <Image src={"/logo.svg"} width={36} height={36} alt={"logo"} />
-            <nav className="brand-name">All Apparel Gadget</nav>
+            <nav>
+              <MenuItem label="All" />
+              <MenuItem label="Apparel" />
+              <MenuItem label="Gadget" />
+            </nav>
             <div className="icon-menu">
               <IconItem icon="menu" />
             </div>
@@ -69,12 +74,18 @@ const Home: NextPage = () => {
             </p>
             <button>See More</button>
           </div>
-          <SquareImage size="large" />
+          <div>
+            <SquareImage size="large" />
+          </div>
         </div>
         <div className="promotion-banner">
           <div className={"promotion-banner-left"} id={"flex-9"}>
-            <RectBanner size="small" />
-            <RectBanner size="small" />
+            <div>
+              <RectBanner size="small" />
+            </div>
+            <div>
+              <RectBanner size="small" />
+            </div>
           </div>
           <div className={"promotion-banner-right"} id={"flex-10"}>
             <RectBanner size="medium" />
