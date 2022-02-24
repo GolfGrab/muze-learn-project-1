@@ -288,6 +288,9 @@ button {
   .gallery-container {
     flex-direction: column;
   }
+  #flex-7 {
+    max-width: 90%;
+  }
   #flex-8 {
     max-width: 85%;
   }
